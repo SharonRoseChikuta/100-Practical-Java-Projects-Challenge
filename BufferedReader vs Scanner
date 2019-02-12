@@ -1,0 +1,65 @@
+package UserInput;
+
+import java.io.*;
+import java.util.Scanner;
+
+public class CalculateInput {
+
+	public static void main(String[] args) throws Exception {
+		
+		 // why do you have to throw exception what does this mean aha 
+		
+		// This is a program to take two numbers from the user and apply operations on them
+		// like project three but taking user input. 
+		
+		BufferedReader input = new BufferedReader(new InputStreamReader (System.in));
+		System.out.println("Enter a number: ");
+		
+		int firstinput = Integer.parseInt(input.readLine());
+		
+		System.out.println("Enter another number: ");
+		
+		int secondinput = Integer.parseInt(input.readLine());
+		
+		double add, sub, mul, div;
+		
+		add = firstinput + secondinput ;
+		sub = firstinput - secondinput ;
+		mul = firstinput * secondinput;
+		div = firstinput/secondinput; // modulo will just give you the remainder
+		
+		System.out.println("Your two numbers added is equal to " + add  + ".");
+		System.out.println("Your two numbers substracted is equal to  " + sub + ".");
+		System.out.println("Your two numbers multiplied is equal to " + mul  + ".");
+		System.out.println("Your two numbers divided is equal to " + div + ".");
+		
+		
+		/* suing scanner 
+		System.out.println("Enter a number ");
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter another number ");
+		int firstinput = input.nextInt();
+		int secondinput = input.nextInt();
+		double add, sub, mul, div;
+		
+		add = firstinput + secondinput ;
+		sub = firstinput - secondinput ;
+		mul = firstinput * secondinput;
+		div = firstinput/secondinput; // modulo will just give you the remainder
+		
+		System.out.println("Your two numbers added is equal to " + add  + ".");
+		System.out.println("Your two numbers substracted is equal to  " + sub + ".");
+		System.out.println("Your two numbers multiplied is equal to " + mul  + ".");
+		System.out.println("Your two numbers divided is equal to " + div + ".");
+	
+	
+
+	// Why use bufferreader instead of scanner?
+	// https://stackoverflow.com/questions/2231369/scanner-vs-bufferedreader
+
+	 */
+	}
+}
+

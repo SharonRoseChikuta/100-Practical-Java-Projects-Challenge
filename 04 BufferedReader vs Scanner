@@ -74,4 +74,4 @@ Scanner can use tokenize using custom delimiter and parse the stream into primit
 BufferedReader is synchronous while Scanner is not. 
 
 Use BufferedReader if you're working with multiple threads.
-Scanner hides IOException while BufferedReader throws it immediately."
+Scanner hides IOException while BufferedReader throws it immediately." 

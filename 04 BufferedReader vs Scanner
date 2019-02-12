@@ -75,3 +75,17 @@ BufferedReader is synchronous while Scanner is not.
 
 Use BufferedReader if you're working with multiple threads.
 Scanner hides IOException while BufferedReader throws it immediately." 
+
+Another useful one:
+
+"
+BufferedReader only read data but scanner also parse data.
+you can only read String using BufferedReader, but you can read int, long or float using Scanner.
+BufferedReader is older from Scanner,it exists from jdk 1.1 while Scanner was added on JDK 5 release.
+The Buffer size of BufferedReader is large(8KB) as compared to 1KB of Scanner.
+BufferedReader is more suitable for reading file with long String while Scanner is more suitable for reading small user input from command prompt.
+BufferedReader is synchronized but Scanner is not, which means you cannot share Scanner among multiple threads.
+BufferedReader is faster than Scanner because it doesn't spent time on parsing
+BufferedReader is a bit faster as compared to Scanner
+BufferedReader is from java.io package and Scanner is from java.util package on basis of the points we can select our choice.
+"

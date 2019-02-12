@@ -1,0 +1,24 @@
+package Arithmatic;
+
+public class Math {
+	
+	public static void main(String[] args) {
+		
+		// declare the type of numbers you would like to use
+		double firstnum = 5, secondnum=7, addition, subtraction, multiplication, division; // I had to use double for the division to be correct
+		 
+		
+		addition = firstnum + secondnum ;
+		subtraction = firstnum - secondnum;
+		multiplication = firstnum * secondnum;
+		division = firstnum / secondnum ; // notice the difference between / and %
+		
+		System.out.println("The addition of the two numbers is " + addition + ".");
+		System.out.println("The subtraction of the two numbers is " + subtraction + ".");
+		System.out.println("The multiplication of the two numbers is " + multiplication +".");
+		System.out.println("The division of the two numbers is " + division + ".");
+		
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+
+// This is a project to create my own printing object to print data on the screen instead of the common s.o.p
+// still don't know how to commit from Eclipse, its not working so for now ill be copy and pasting
+
+package Print;
+
+import java.io.PrintWriter;
+
+public class Writer {
+	
+	public static void main(String[] args) {
+		
+		PrintWriter pw = new PrintWriter (System.out, true);
+		
+		String createmyownprinter = "Project 2";
+		
+		pw.println("This is " + createmyownprinter + ". Yay, but what was the point?");
+		
+		// what is the benefit of creating your own print method?
+		
+	}
+
+}

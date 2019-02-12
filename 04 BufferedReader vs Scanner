@@ -63,3 +63,15 @@ public class CalculateInput {
 	}
 }
 
+Buffer vs Scanner? IEK 
+
+Some guys answer from Stack overflow that i linked in the code.
+
+"BufferedReader has significantly larger buffer memory than Scanner. 
+
+Use BufferedReader if you want to get long strings from a stream, and use Scanner if you want to parse specific type of token from a stream.
+Scanner can use tokenize using custom delimiter and parse the stream into primitive types of data, while BufferedReader can only read and store String.
+BufferedReader is synchronous while Scanner is not. 
+
+Use BufferedReader if you're working with multiple threads.
+Scanner hides IOException while BufferedReader throws it immediately."

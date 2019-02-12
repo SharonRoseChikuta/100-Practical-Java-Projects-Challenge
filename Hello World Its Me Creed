@@ -1,0 +1,13 @@
+
+// From Eclipse still trying to figure ish out lol
+
+
+package HelloWorld;
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		System.out.println("Hello World! My name is Sharon Chikuta and I will be learning Java. HAHAHAHA YAYAYAAYAYA");
+	}
+
+}

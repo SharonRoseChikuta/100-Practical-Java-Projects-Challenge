@@ -1,0 +1,44 @@
+
+//This code is supposed to give you the date and time using the Gregorian Calendar
+
+package DateTime;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
+
+
+public class DateAndTime {
+	
+	public static void main (String[] args) throws IOException {
+		
+		// This code is me just trying to remember if I remember how to use BufferedReader
+		BufferedReader test = new BufferedReader (new InputStreamReader(System.in));
+		System.out.println("Would you like to see the date and time?");
+		String userstring = test.readLine();
+		System.out.println("You said " + userstring + ". Good for you.");
+		
+		// Ignore the above code lolol 
+		
+		
+		// declare the variable we would like to use
+		
+		// int month,day, year;
+		// int hour, minute, second; // probbaly better to do it on one line
+		
+		GregorianCalendar myCal = new GregorianCalendar(); // create a new object of type GregorianCalendar or is it an instance
+		
+		int  month = myCal.get(Calendar.MONTH);
+		int  day = myCal.get(Calendar.DAY_OF_MONTH);
+		int  year = myCal.get(Calendar.YEAR);
+	    int  hour = myCal.get(Calendar.HOUR);
+		int 	 minute = myCal.get(Calendar.MINUTE);
+		int  second = myCal.get(Calendar.SECOND);
+		
+		System.out.println("The date for today is  " + (month+1) + "/" + day + "/ " + year + "."); // why is the month in the Gregorian Calendar behind??
+		System.out.println("The time is " + hour + ":" + minute + ":" +second+ ". Make the most of it!");
+		
+	}
+
+}
